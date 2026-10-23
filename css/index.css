@@ -1,1 +1,111 @@
- 
+@keyframes skel {
+   from {
+      right:-40vw;
+   }
+   to {
+      right: 120vw;
+   }
+}
+* {
+   cursor: url('../assets/fritze.png') 1 1, auto;
+}
+
+body {
+    background-color:rgb(92, 85, 85);
+    color:black;
+    padding: 2% 4%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    height:calc(100vw - 100vh);
+    overflow:hidden;
+    overflow-y:auto;
+    gap:calc(.8vh + .8vw);
+     .el {
+        width:70vw;
+        height: calc(11vh + 4vw);
+        border-radius:1.6px;
+        background-color:#3c3c3c;
+        color:white;
+        padding:2% 3%;
+        font-weight:600;
+        font-family:sans-serif;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+     }
+     .el.s {
+        width:32.05vw;
+        max-width:70vw;
+     }
+     .el.ss {
+        width:calc(19vw + .25vh);
+     }
+     h1.el {
+        font-size:calc(5.5vw + 1.05vh);
+        height: calc(5.5vh + 4.9vw);
+        zoom:0.9;
+        position:relative;
+     }
+     h1.el>center:before {
+        content: '';
+        background: url(../assets/fritz.png) no-repeat;
+        background-size: auto 90px;
+        position: absolute;
+        top: -70px;
+        left: 65px;
+        height: 100px;
+        width: 100px;
+        zoom: 1;
+        z-index: -1;
+
+     }
+     .br {
+        flex-basis:100%;
+        height:0;
+        margin:0;
+     }
+     #last {
+        margin-top:2vh;
+        width:100vw;
+        height:20px;
+     }
+     .ske {
+      position:fixed;
+      bottom:0;
+      right:-40vw;
+      height:240px;
+      width:180px;
+      zoom:1.3;
+     }
+}
+body:after {
+   content:'';
+   /*background:url('https://cdn.tarnkappe.info/wp-content/uploads/drachenlord-frueher-einmal-1210x887.png') no-repeat;*/
+   position:fixed;
+   top:0;
+   left:0;
+   width:100vw;
+   height:100vh;
+   background-size:auto auto;
+   z-index:-1;
+   cursor: url('../assets/fritze.png') 1 1, auto;
+}
+.btn {
+    position:fixed;
+    bottom:10vh;
+    right:6vw;
+    padding:15px;
+    border-radius:1.4px;
+    background-color:#3c3c3c;
+    color:rgb(234, 204, 10);
+    font-weight:600;
+    font-family:sans-serif;
+    cursor:pointer;
+    box-shadow:1px 2px 1px 3px rgb(74, 71, 71);
+    z-index: 99999;
+}
+.hidden {
+    display:none;
+} 
