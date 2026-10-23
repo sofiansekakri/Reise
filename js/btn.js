@@ -21,7 +21,6 @@
             document.querySelector('img.ske').style.animation = '9s skel linear 1.6s';
             window.btn.addEventListener( 'click' , function() {
                 if (window.confirm('Sofian eine 1 geben???')) {
-                    alert('danke sehr');
                     const el = document.createElement('style');
                     el.innerText = `body:after {
    content:'';
