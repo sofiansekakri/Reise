@@ -22,6 +22,20 @@
             window.btn.addEventListener( 'click' , function() {
                 if (window.confirm('Sofian eine 1 geben???')) {
                     alert('danke sehr');
+                    const el = document.createElement('style');
+                    el.innerText = `body:after {
+   content:'';
+   background:url('./assets/skeletonshield.gif');
+   position:fixed;
+   top:0;
+   left:0;
+   width:100vw;
+   height:100vh;
+   background-size:200px;
+   z-index:-1;
+   cursor: url('./assets/fritze.png') 1 1, auto;
+}`;
+document.body.appendChild(el);
                 } else {
                     const h = document.querySelector('h1');
                     h.innerText = 'HATE HATE HATE HATE';
