@@ -25,7 +25,7 @@
                     const el = document.createElement('style');
                     el.innerText = `body:after {
    content:'';
-   background:url('./assets/skeletonshield.gif');
+   background:url('./assets/skeletonsword.gif') repeat;
    position:fixed;
    top:0;
    left:0;
